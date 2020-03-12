@@ -12,6 +12,11 @@ code {
     monospace;
 }
 
+ul {
+  list-style-type: none;
+  text-align: left;
+}
+
 .window {
   background-color: #002b36;
   padding-bottom: 500px;
@@ -27,11 +32,22 @@ code {
   margin-top: 14px;
   margin-right: 7px;
 }
-.red {background-color: #dc3545;}
-.yellow {background-color: #ffc107;}
-.green {background-color: #28a745;}
+.dot.red {background-color: rgb(42, 199, 52);}
+.dot.yellow {background-color: rgb(254 177 37);}
+.dot.green {background-color: rgb(252, 72, 72);}
 
 .code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
-  color: #eee8d5;
 }
+
+.comment {color: #586e75;}
+.base {color: #657b83;}
+.yellow {color: #b58900;}
+.orange {color: #cb4b16;}
+.red {color: #dc322f;}
+.magenta {color: #d33682;}
+.violet {color: #6c71c4;}
+.blue {color: #268bd2;}
+.cyan {color: #2aa198;}
+.green {color: #859900;}
+.white {color: #fff;}
