@@ -18,7 +18,7 @@ class Window extends React.Component {
     const animationIterator = distributeAnimationSequence(animationSequence);
     for await (const animationDetail of animationIterator) {
       this.addText(animationDetail);
-      console.log(animationDetail);
+      //console.log(animationDetail);
     }
   }
   addText({ text, color }) {
