@@ -25,9 +25,6 @@ class Window extends React.Component {
   */
   addLine(line) {
     if (this.state.linesShown < lines.length) {
-      // let newlines = this.state.lines.slice();
-      // newlines.push(<Line build={lines[line]} />)
-      // console.log(newlines)
       this.state.lines.push(<Line build={lines[line]} />);
       this.setState({linesShown: this.state.linesShown + 1});
     } else {
