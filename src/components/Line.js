@@ -17,6 +17,9 @@ class Line extends React.Component {
       this.state.components.push(<C text={props.build[i].text} color={props.build[i].color}/>);
     }
   }
+  animateComponents() {
+    
+  }
   render() {
     return <div className="line"> {this.state.components} </div>;
   }
