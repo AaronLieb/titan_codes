@@ -6,7 +6,7 @@ import Window from './components/Window.js';
 function App() {
   return (
     <div className="App">
-      <nav className="navbar navbar-expand-md navbar-light bg-light sticky-top">
+      <nav className="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
         <div className="container-fluid">
           <a className="navbar-brand" href="#">
             <img className="navbar-brand" src="logo192.png" width="40" />
@@ -31,7 +31,9 @@ function App() {
         </div>
       </nav>
       <div className="container-fluid">
+        <div className="mt-5" />
         <Window />
+        <div style={{marginTop: 150 + 'px'}} />
       </div>
       <footer className="bg-light mt-4">
         <div className="container-fluid py-3">

@@ -1,7 +1,6 @@
 import React from 'react';
 import './Window.css';
-import Line from './Line.js';
-import lines from '../lines.js';
+import lineData from '../lineData.js';
 
 class Window extends React.Component {
   constructor(props) {
@@ -15,24 +14,19 @@ class Window extends React.Component {
     this.animate();
   }
   async animate() {
-    for (let line in lines) {
-      this.addLine(line);
-      console.log(this.state.lines)
+    const animationSequence = splitSplits(lineData);
+    const animationIterator = distributeAnimationSequence(animationSequence);
+    for await (const animationDetail of animationIterator) {
+      this.addText(animationDetail);
+      console.log(animationDetail);
     }
   }
-  /*
-  Add animation of components / editing of lines
-  */
-  addLine(line) {
-    if (this.linesShown < lines.length) {
-      this.state.lines.push(<Line build={lines[line]} />);
-      this.setState({linesShown: this.linesShown + 1});
-    } else {
-      let newlines = this.state.lines.slice();
-      newlines.shift();
-      newlines.push(<Line build={lines[line]} />);
-      this.setState({lines: newlines});
-    }
+  addText({ text, color }) {
+    const className = `textComponent ${color}`;
+    let nextLine = text === "\n"
+      ? <br></br>
+      : <span className={className}>{text}</span>;
+    this.setState({ lines: this.state.lines.concat(nextLine) });
   }
   render() {
     return (
@@ -50,8 +44,31 @@ class Window extends React.Component {
   }
 }
 
-function sleep(ms) {
-  return new Promise(resolve => setTimeout(resolve, ms));
+const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
+
+const splitSplits = lineData => {
+  const result = [];
+  for (let line of lineData) {
+    for (let phrase of line) {
+      if (phrase.split !== undefined) {
+        phrase.text.split("")
+          .forEach(char => result.push({ text: char, time: phrase.split, color: phrase.color }));
+      } else {
+        result.push(phrase);
+      }
+    }
+      result.push({ text: "\n", time: 0 });
+    }
+  return result;
+};
+
+async function* distributeAnimationSequence(animationSequence) {
+  let i = 1;
+  while (i < animationSequence.length) {
+    await sleep(animationSequence[i - 1].time);
+    yield animationSequence[i - 1];
+    i++;
+  }
 }
 
 export default Window;
