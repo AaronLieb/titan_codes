@@ -1,45 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-
-class Text extends React.Component {
-  constructor(props) {
-    super(props);
-    this.text = props.text;
-    this.color = props.color;
-  }
-  render() {
-    return (
-      <span className={`code ` + `${this.color}`}> {this.text} </span>
-    );
-  }
-}
-
-class Window extends React.Component {
-  render() {
-    return (
-      <div className="window">
-        <div className="window-top d-flex">
-          <div className="dot red ml-3"></div>
-          <div className="dot yellow"></div>
-          <div className="dot green"></div>
-        </div>
-        <div className="window-body d-flex">
-          <ul>
-            <li className="mt-3">
-              <Text color="green" text="aaronlieberman" />
-              <Text color="white" text=":" />
-              <Text color="blue" text="~/Code/web/react/titan_codes" />
-              <Text color="white" text="$ " />
-            </li>
-            <Text color="comment" text="// This is a comment" />
-            <Text color="base" text="Base2" />
-          </ul>
-        </div>
-      </div>
-    );
-  }
-}
+import Window from './components/Window.js';
 
 function App() {
   return (
@@ -54,7 +16,7 @@ function App() {
             <span className="navbar-toggler-icon"></span>
           </button>
           <div className="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav ml-auto">
+            <ul className="navbar-nav ml-auto">
               <li className="nav-item active">
                 <a className="nav-link" href="#"> Home </a>
               </li>
