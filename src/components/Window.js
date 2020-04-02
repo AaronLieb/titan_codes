@@ -6,8 +6,8 @@ import lines from '../lines.js';
 class Window extends React.Component {
   constructor(props) {
     super(props);
+    this.linesShown = 0;
     this.state = {
-      linesShown: 0,
       lines: [],
     };
   }
@@ -24,9 +24,9 @@ class Window extends React.Component {
   Add animation of components / editing of lines
   */
   addLine(line) {
-    if (this.state.linesShown < lines.length) {
+    if (this.linesShown < lines.length) {
       this.state.lines.push(<Line build={lines[line]} />);
-      this.setState({linesShown: this.state.linesShown + 1});
+      this.setState({linesShown: this.linesShown + 1});
     } else {
       let newlines = this.state.lines.slice();
       newlines.shift();
