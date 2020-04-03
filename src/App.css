@@ -8,7 +8,7 @@ https://getwaves.io/ */
 
 .bg-darkblue {
   /* background-color: #002b36; */
-  background-color: #eee;
+  background-color: #fff;
 }
 
 .display {
@@ -17,13 +17,13 @@ https://getwaves.io/ */
 
 .main {
   color: #1a2a3a;
-  background-color: #eee;
+  background-color: #fff;
   padding: 100px;
 }
 
 .second {
   background-color: #89afb2;
-  color: #eee;
+  color: #fff;
   padding: 100px;
 }
 
