@@ -32,7 +32,6 @@ svg {
 
 svg.white {
   background: white;
-  transform: scale(1.5); /* FIX LATER */
 }
 
 nav {
