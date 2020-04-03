@@ -1,6 +1,10 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# 🐘 Titan Codes
+> Titan Codes event frontend
 
-## Available Scripts
+## ⁉ About
+This is a frontend project created for the Titan Codes event; held on September 19th, 2020 in the Pollak Library at CSUF. This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## Available `create-react-app` Scripts
 
 In the project directory, you can run:
 
