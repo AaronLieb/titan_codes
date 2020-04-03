@@ -26,6 +26,10 @@ https://getwaves.io/ */
   padding: 100px;
 }
 
+svg {
+  transform: scale(1.03);
+}
+
 svg.white {
   background: white;
 }
