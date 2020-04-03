@@ -35,9 +35,9 @@ class Window extends React.Component {
     return (
       <div className="window">
         <div className="window-top">
-          <div className="dot green ml-3"></div>
-          <div className="dot yellow"></div>
           <div className="dot red"></div>
+          <div className="dot yellow"></div>
+          <div className="dot green"></div>
         </div>
         <div className="window-body">
           {this.state.lines}
