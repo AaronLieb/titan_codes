@@ -41,6 +41,7 @@ class Window extends React.Component {
         </div>
         <div className="window-body">
           {this.state.lines}
+          <span className="textComponent base blink"> █</span>
         </div>
       </div>
     );

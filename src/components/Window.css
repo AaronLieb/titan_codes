@@ -38,6 +38,16 @@ https://ethanschoonover.com/solarized/
 .dot.yellow {background-color: rgb(254 177 37);}
 .dot.green {background-color: rgb(252, 72, 72);}
 
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+.blink {
+  animation: blinker 1s step-start infinite;
+}
+
 .line {
   margin: 0;
   padding: 0;
