@@ -1,11 +1,11 @@
 import React from 'react';
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
 import Window from './components/Window.js';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App" id="top">
 
       <nav className="navbar navbar-expand-md navbar-light bg-darkblue sticky-top">
         <div className="container-fluid">
@@ -19,13 +19,13 @@ function App() {
           <div className="collapse navbar-collapse" id="navbarResponsive">
             <ul className="navbar-nav ml-auto">
               <li className="nav-item active">
-                <a className="nav-link" href="#"> Home </a>
+                <a className="nav-link" href="#top"> Home </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#"> FAQ </a>
+                <a className="nav-link" href="#faq"> FAQ </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#"> Sponsors </a>
+                <a className="nav-link" href="#sponsors"> Sponsors </a>
               </li>
             </ul>
           </div>
@@ -40,10 +40,10 @@ function App() {
         <h1> More information </h1>
         <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
 
-        <h1> FAQ </h1>
+        <h1 id="faq"> FAQ </h1>
         <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
 
-        <h1> Sponsors </h1>
+        <h1 id="sponsors"> Sponsors </h1>
         <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
       </div>
 
