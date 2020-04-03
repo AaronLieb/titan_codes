@@ -3,11 +3,12 @@ https://getwaves.io/ */
 
 .App {
   background-color: #89afb2;
+  overflow-x: hidden;
 }
 
 .bg-darkblue {
   /* background-color: #002b36; */
-  background-color: #fff;
+  background-color: #eee;
 }
 
 .display {
@@ -16,22 +17,18 @@ https://getwaves.io/ */
 
 .main {
   color: #1a2a3a;
-  background-color: white;
+  background-color: #eee;
   padding: 100px;
 }
 
 .second {
   background-color: #89afb2;
-  color: white;
+  color: #eee;
   padding: 100px;
 }
 
 svg {
   transform: scale(1.04); /* FIX LATER */
-}
-
-svg.white {
-  background: white;
 }
 
 nav {
