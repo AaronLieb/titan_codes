@@ -1,12 +1,12 @@
 import React from 'react';
-import './Window.css';
+import './TerminalReplica.css';
 import lineData from '../lineData.js';
 import { ScheduledSequence } from 'scheduled-sequence';
 
 // how to get size of container:
 // https://stackoverflow.com/questions/49058890/how-to-get-a-react-components-size-height-width-before-render
 
-class Window extends React.Component {
+class TerminalReplica extends React.Component {
   constructor(props) {
     super(props);
     this.linesShown = 0;
@@ -48,6 +48,7 @@ class Window extends React.Component {
   }
 }
 
+// Helper
 const splitSplits = lineData => {
   const result = [];
   for (let line of lineData) {
@@ -70,4 +71,4 @@ const splitSplits = lineData => {
   return result;
 };
 
-export default Window;
+export default TerminalReplica;
