@@ -51,7 +51,8 @@ class TerminalReplica extends React.Component {
 // Helper
 const splitSplits = lineData => {
   const result = [];
-  for (let line of lineData) {
+  for (let i = 0; i < lineData.length; i++) {
+    const line = lineData[i];
     for (let phrase of line) {
       if (phrase.split !== undefined) {
         phrase.details.text.split("")
@@ -63,10 +64,12 @@ const splitSplits = lineData => {
         result.push(phrase);
       }
     }
-    result.push({
-      details: { text: "\n" },
-      timeout: 0
-    });
+    if (i < lineData.length - 1) {
+      result.push({
+        details: { text: "\n" },
+        timeout: 0
+      });
+    }
   }
   return result;
 };
