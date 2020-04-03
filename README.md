@@ -1,6 +1,8 @@
 # 🐘 Titan Codes
 > Titan Codes event frontend
 
+## 🔥 Visit the site [here][homepage]
+
 ## ⁉ About
 This is a frontend project created for the Titan Codes event; held on September 19th, 2020 in the Pollak Library at CSUF. This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -70,3 +72,9 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+---
+
+Built with 🐘 by Titan Codes Team
+
+[homepage]: https://aaronlieb.github.io/titan_codes/
