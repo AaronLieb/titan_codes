@@ -1,6 +1,7 @@
 import React from 'react';
 import './Window.css';
 import lineData from '../lineData.js';
+import { ScheduledSequence } from 'scheduled-sequence';
 
 // how to get size of container:
 // https://stackoverflow.com/questions/49058890/how-to-get-a-react-components-size-height-width-before-render
@@ -17,11 +18,10 @@ class Window extends React.Component {
     this.animate();
   }
   async animate() {
-    const animationSequence = splitSplits(lineData);
-    const animationIterator = distributeAnimationSequence(animationSequence);
+    const animationSequence = ScheduledSequence(splitSplits(lineData));
+    const animationIterator = animationSequence.distribute();
     for await (const animationDetail of animationIterator) {
       this.addText(animationDetail);
-      //console.log(animationDetail);
     }
   }
   addText({ text, color }) {
@@ -48,31 +48,26 @@ class Window extends React.Component {
   }
 }
 
-const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
-
 const splitSplits = lineData => {
   const result = [];
   for (let line of lineData) {
     for (let phrase of line) {
       if (phrase.split !== undefined) {
-        phrase.text.split("")
-          .forEach(char => result.push({ text: char, time: phrase.split, color: phrase.color }));
+        phrase.details.text.split("")
+          .forEach(char => result.push({
+            details: { text: char, color: phrase.details.color },
+            timeout: phrase.split
+          }));
       } else {
         result.push(phrase);
       }
     }
-      result.push({ text: "\n", time: 0 });
-    }
+    result.push({
+      details: { text: "\n" },
+      timeout: 0
+    });
+  }
   return result;
 };
-
-async function* distributeAnimationSequence(animationSequence) {
-  let i = 1;
-  while (i < animationSequence.length) {
-    await sleep(animationSequence[i - 1].time);
-    yield animationSequence[i - 1];
-    i++;
-  }
-}
 
 export default Window;
