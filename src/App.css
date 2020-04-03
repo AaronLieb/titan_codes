@@ -27,11 +27,12 @@ https://getwaves.io/ */
 }
 
 svg {
-  transform: scale(1.03);
+  transform: scale(1.04); /* FIX LATER */
 }
 
 svg.white {
   background: white;
+  transform: scale(1.5); /* FIX LATER */
 }
 
 nav {
