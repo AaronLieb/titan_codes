@@ -2,6 +2,9 @@ import React from 'react';
 import './Window.css';
 import lineData from '../lineData.js';
 
+// how to get size of container:
+// https://stackoverflow.com/questions/49058890/how-to-get-a-react-components-size-height-width-before-render
+
 class Window extends React.Component {
   constructor(props) {
     super(props);
@@ -32,9 +35,9 @@ class Window extends React.Component {
     return (
       <div className="window">
         <div className="window-top">
-          <div className="dot red ml-3"></div>
+          <div className="dot green ml-3"></div>
           <div className="dot yellow"></div>
-          <div className="dot green"></div>
+          <div className="dot red"></div>
         </div>
         <div className="window-body">
           {this.state.lines}
