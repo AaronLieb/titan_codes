@@ -15,9 +15,11 @@ class TerminalReplica extends React.Component {
     };
   }
   componentDidMount() {
+    console.log("Mounted");
     this.animate();
   }
   async animate() {
+    console.log("Animate!");
     const animationSequence = ScheduledSequence(splitSplits(lineData));
     const animationIterator = animationSequence.distribute();
     for await (const animationDetail of animationIterator) {
@@ -25,6 +27,7 @@ class TerminalReplica extends React.Component {
     }
   }
   addText({ text, color }) {
+    console.log("Add text");
     const className = `textComponent ${color}`;
     let nextLine = text === "\n"
       ? <br></br>
