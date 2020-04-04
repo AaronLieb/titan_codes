@@ -16,7 +16,7 @@ https://getwaves.io/ */
   padding: 100px;
 }
 
-.second {
+.second { /* add max width to main and second */
   background-color: #89afb2;
   color: #fff;
   padding: 100px;

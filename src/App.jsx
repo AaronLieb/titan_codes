@@ -3,6 +3,19 @@ import React from 'react';
 import './App.css';
 import TerminalReplica from './components/TerminalReplica.jsx';
 
+
+/* TODO:
+    [] create footer
+    [] Move github link to Footer
+    [] add made with <3 in Footer
+    [] max-width: #ch for the text content
+    [] scrollTo navbar functionality
+    [] Vertically Center TitanCodes in navbar
+    [] Redo 2nd wave
+
+
+*/
+
 function App() {
   return (
     <div className="App" id="top">
