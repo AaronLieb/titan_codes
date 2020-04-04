@@ -73,18 +73,18 @@ https://ethanschoonover.com/solarized/
   animation: blinker 1s step-start infinite;
 }
 
-.comment {color: #586e75;}
-.base {color: #657b83;}
-.yellow {color: #b58900;}
-.orange {color: #cb4b16;}
-.red {color: #dc322f;}
-.magenta {color: #d33682;}
-.violet {color: #6c71c4;}
-.blue {color: #268bd2;}
-.cyan {color: #2aa198;}
-.green {color: #859900;}
-.white {color: #A3A3A3;}
-.bold {font-weight: 1000;}
+span.comment {color: #586e75;}
+span.base {color: #657b83;}
+span.yellow {color: #b58900;}
+span.orange {color: #cb4b16;}
+span.red {color: #dc322f;}
+span.magenta {color: #d33682;}
+span.violet {color: #6c71c4;}
+span.blue {color: #268bd2;}
+span.cyan {color: #2aa198;}
+span.green {color: #859900;}
+span.white {color: #A3A3A3;}
+span.bold {font-weight: 1000;}
 
 .textComponent {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
