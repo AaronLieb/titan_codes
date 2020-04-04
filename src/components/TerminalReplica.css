@@ -43,6 +43,26 @@ https://ethanschoonover.com/solarized/
 .dot.yellow {background-color: rgb(254, 177, 37);}
 .dot.red {background-color: rgb(252, 72, 72);}
 
+@media (max-width: 770px) {
+  .window  {
+    width: calc(80vw * 1.1);
+    height: calc(43vw * 1.1);
+    border-radius: (1.5vw * 1.1);
+  }
+  .window-top {
+    padding-left: (1.3vw * 1.1);
+  }
+  .window-body {
+    padding: calc(2vw * 1.1) calc(4vw * 1.1);
+    font-size: calc(2vw * 1.1);
+  }
+  .dot {
+    height: calc(1vw * 1.1);
+    width: calc(1vw * 1.1);
+    margin: calc(1.5vw * 1.1) calc(0.8vw * 1.1) 0 0;
+  }
+}
+
 @media (min-width: 1300px) {
   .window {
     max-width: calc(1300px * 0.8);
