@@ -21,8 +21,11 @@ class TerminalReplica extends React.Component {
   async animate() {
     console.log("Animate!");
     const animationSequence = ScheduledSequence(splitSplits(lineData));
+    console.log("Declared animationSequence");
     const animationIterator = animationSequence.distribute();
+    console.log("Declared animationIterator");
     for await (const animationDetail of animationIterator) {
+      console.log("Inside await for loop");
       this.addText(animationDetail);
     }
   }
