@@ -3,8 +3,6 @@ Terminal Theme: Solarized
 https://ethanschoonover.com/solarized/
 */
 
-
-
 .window {
   background-color: #002b36;
   border-radius: 1.5vw;
@@ -82,15 +80,8 @@ https://ethanschoonover.com/solarized/
   }
 }
 
-@keyframes blinker {
-  50% {
-    opacity: 0;
-  }
-}
-
-.blink {
-  animation: blinker 1s step-start infinite;
-}
+@keyframes blinker {50% {opacity: 0;}} 
+.blink {animation: blinker 1s step-start infinite;}
 
 span.comment {color: #586e75;}
 span.base {color: #657b83;}
