@@ -9,11 +9,11 @@ https://ethanschoonover.com/solarized/
   background-color: #002b36; /* possibly use white? */
   border-radius: 1.5vw;
   overflow: hidden;
-  margin: 20px auto auto auto;
+  margin: auto;
   width: 80vw;
   height: 43vw;
   position: relative;
-  box-shadow: 10px 10px 6px rgba(0,0,0,0.2);
+  box-shadow: 6px 6px 6px rgba(0,0,0,0.2);
   /* Add media for mobile */
 }
 
