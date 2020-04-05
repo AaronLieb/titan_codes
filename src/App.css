@@ -10,20 +10,22 @@ https://getwaves.io/ */
   padding: 168px 0 50px 0;
 }
 
+div.section {
+  padding: 100px 0;
+}
+
 .main {
   color: #1a2a3a;
   background-color: #fff;
-  padding: 100px 0;
 }
 
 .second { /* add max width to main and second */
   background-color: #89afb2;
   color: #fff;
-  padding: 100px 0;
 }
 
-div.section {
-  max-width: 100ch;
+div.content {
+  max-width: 70vw;
   margin: auto;
 }
 
