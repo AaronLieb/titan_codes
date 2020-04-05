@@ -19,8 +19,8 @@ var lines = [
     { details: {text: "", color: "white" }, timeout: 0 },
     { details: {text: " python3 info.py", color: "yellow" }, split: 69 }
   ],
-  [{ details: { text: "When: September 19th 2020", color: "white" }, timeout: 500 }],
-  [{ details: { text:"Where: Pollak Library", color: "white" }, timeout: 0 }],
+  [{ details: { text: "A Cal State Fullerton Programming Competition", color: "white" }, timeout: 500 }],
+  [{ details: { text:"September 19th 2020 in the Pollak Library", color: "white" }, timeout: 0 }],
   [
     { details: {text: "titancodes@csuf", color: "green"}, timeout: 0},
     { details: {text: " ~/code/", color: "blue" }, timeout: 0 },

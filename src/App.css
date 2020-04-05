@@ -24,9 +24,16 @@ div.section {
   color: #fff;
 }
 
-div.content {
+.content {
   max-width: 70vw;
-  margin: auto;
+  margin: auto auto 30px auto;
+  font-size: 20px;
+}
+
+.content > h1.big {
+  font-size: 50px !important;
+  max-width: 70vw;
+  margin-bottom: 15px;
 }
 
 svg {
