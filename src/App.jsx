@@ -1,12 +1,9 @@
 import React from 'react';
 // import logo from './logo.svg';
 import './App.css';
-
-import Scroll from 'react-scroll';
-const Element = Scroll.Element;
-const scroller = Scroll.scroller;
-
 import TerminalReplica from './components/TerminalReplica.jsx';
+
+import { Element, scroller, animateScroll } from 'react-scroll';
 
 
 function App() {
@@ -25,13 +22,13 @@ function App() {
           <div className="collapse navbar-collapse" id="navbarResponsive">
             <ul className="navbar-nav ml-auto">
               <li className="nav-item">
-                <a className="nav-link" onClick={Scroll.animateScroll.scrollToTop}> Home </a>
+                <a className="nav-link" onClick={animateScroll.scrollToTop}> Home </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" onClick={() => scroller.scrollTo('faq', {duration: 1500, delay: 100, smooth: true, offset: -170})}> FAQ </a>
+                <a className="nav-link" onClick={() => scroll("faq")}> FAQ </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" onClick={() => scroller.scrollTo('sponsors', {duration: 1500, delay: 100, smooth: true, offset: -170})}> Sponsors </a>
+              <a className="nav-link" onClick={() => scroll("sponsors")}> Sponsors </a>
               </li>
             </ul>
           </div>
@@ -101,5 +98,15 @@ function App() {
     </div>
   );
 }
+
+// Helpers
+const scroll = anchor => {
+  scroller.scrollTo(anchor, {
+    duration: 1500,
+    delay: 100,
+    smooth: true,
+    offset: -170
+  });
+};
 
 export default App;
