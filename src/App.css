@@ -6,6 +6,21 @@ https://getwaves.io/ */
   overflow-x: hidden;
 }
 
+nav {
+  background-color: #fff;
+  color: #1a2a3a;
+  font-weight: 600;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+.nav-link:hover {
+  cursor: pointer; 
+}
+
+.nav-link:active {
+  color: black !important;
+}
+
 .display {
   padding: 168px 0 50px 0;
 }
@@ -38,13 +53,6 @@ div.section {
 
 svg {
   transform: scale(1.04); /* FIX LATER */
-}
-
-nav {
-  background-color: #fff;
-  color: #1a2a3a;
-  font-weight: 600;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
 }
 
 footer {
