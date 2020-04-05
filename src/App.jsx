@@ -9,29 +9,16 @@ const scroller = Scroll.scroller;
 import TerminalReplica from './components/TerminalReplica.jsx';
 
 
-/* TODO:
-    [X] create footer
-    [X] Move github link to Footer
-    [X] add made with <3 in Footer
-    [] max-width: #ch for the text content
-    [] scrollTo navbar functionality
-    [] Vertically Center TitanCodes in navbar
-    [X] Redo 2nd wave
-
-
-*/
-
-
 function App() {
   return (
     <div className="App">
 
       <nav className="navbar navbar-expand-md navbar-light fixed-top">
         <div className="container-fluid">
-          <a className="navbar-brand" href="#">
+          <div className="navbar-brand" href="#">
             <img className="navbar-brand" src="logo192.png" width="40" />
             TitanCodes
-          </a>
+          </div>
           <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
             <span className="navbar-toggler-icon"></span>
           </button>
@@ -71,7 +58,7 @@ function App() {
           <h1> FAQ </h1>
           <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
           <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
-          
+
         </div>
 
       </div>
@@ -84,6 +71,7 @@ function App() {
         <div className="content">
           <h1 className="big"> Sponsors </h1>
           <p> If  you'd like to sponsor the event, please contact placeholder@fullerton.edu. </p>
+          <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
           <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
 
         </div>

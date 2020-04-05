@@ -22,6 +22,11 @@ a.link {
   font-weight: 600;
 }
 
+.navbar-brand {
+  display: flex;
+  align-items: center;
+}
+
 svg.icon:hover {
   fill: #ccc;
 }
