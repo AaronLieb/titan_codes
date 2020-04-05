@@ -13,13 +13,18 @@ https://getwaves.io/ */
 .main {
   color: #1a2a3a;
   background-color: #fff;
-  padding: 100px;
+  padding: 100px 0;
 }
 
 .second { /* add max width to main and second */
   background-color: #89afb2;
   color: #fff;
-  padding: 100px;
+  padding: 100px 0;
+}
+
+div.section {
+  max-width: 100ch;
+  margin: auto;
 }
 
 svg {
@@ -36,6 +41,10 @@ nav {
 footer {
   color: white;
   text-align: center;
+}
+
+footer > div > div {
+  margin: 25px;
 }
 
 
