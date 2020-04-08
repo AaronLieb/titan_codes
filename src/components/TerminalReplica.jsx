@@ -15,22 +15,16 @@ class TerminalReplica extends React.Component {
     };
   }
   componentDidMount() {
-    console.log("Mounted");
     this.animate();
   }
   async animate() {
-    console.log("Animate!");
     const animationSequence = ScheduledSequence(splitSplits(lineData));
-    console.log("Declared animationSequence");
     const animationIterator = animationSequence.distribute();
-    console.log("Declared animationIterator");
     for await (const animationDetail of animationIterator) {
-      console.log("Inside await for loop");
       this.addText(animationDetail);
     }
   }
   addText({ text, color }) {
-    console.log("Add text");
     const className = `textComponent ${color}`;
     let nextLine = text === "\n"
       ? <br></br>

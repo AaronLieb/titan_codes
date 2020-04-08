@@ -1,0 +1,15 @@
+.faq-question {
+  overflow: hidden;
+}
+
+.faq-head {
+  border: 2px gray solid;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.faq-body {
+  margin: 2px;
+  height: 0;
+  transition: height 0.5s;
+}
