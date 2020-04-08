@@ -2,6 +2,7 @@ import React from 'react';
 // import logo from './logo.svg';
 import './App.css';
 import TerminalReplica from './components/TerminalReplica.jsx';
+import FaqQuestion from './components/FaqQuestion.jsx'
 
 import { Element, scroller, animateScroll } from 'react-scroll';
 
@@ -53,9 +54,17 @@ function App() {
         <Element name="faq" />
         <div className="content">
           <h1> FAQ </h1>
-          <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
-          <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
-
+          <FaqQuestion
+            question="How do I find a team?"
+            answer="You can sign up with up as an independent or as any team size up to 4 people.
+            Whether you sign up independent or as a group you will be placed into a full sized group
+            before the competition starts. We will also be hosting a team finding meeting for independents or
+            partial groups to find teamates before the competition so they do not receive random teamates."
+          />
+          <FaqQuestion
+            question="Question 2?"
+            answer="Answer to Question 2 that has enough text to expand to several lines instead of just one"
+          />
         </div>
 
       </div>
