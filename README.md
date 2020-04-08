@@ -13,6 +13,9 @@ This is a frontend project created for the Titan Codes event; held on September 
 * [ ] Fix [App.jsx](src\components\App.jsx) convert FAQ section to flexbox.
   * Created: 4/7/20
   * Completed: TBD
+* [ ] Fix `npm run deploy` so that it does not reset the github pages custom domain.
+  * Created: 4/7/20
+  * Completed: TBD
 
 ## Available `create-react-app` Scripts
 
