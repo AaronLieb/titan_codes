@@ -24,10 +24,12 @@ class FaqQuestion extends React.Component {
   resize = () => {
     this.setState({
       open: false,
-      styleClosed: {height: 'auto'}});
+      styleClosed: { height: 'auto' }
+    });
     this.setState({
       height: this.container.offsetHeight,
-      styleClosed: {height: 0}});
+      styleClosed: { height: 0 }
+    });
   }
 
   handleClick = e => {

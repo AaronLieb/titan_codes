@@ -6,6 +6,11 @@
 ## ⁉ About
 This is a frontend project created for the Titan Codes event; held on September 19th, 2020 in the Pollak Library at CSUF. This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## ✅ Todo
+* [ ] Fix [TerminalReplica](src\components\TerminalReplica.jsx) error for Edge browser.
+  * Created: 4/7/20
+  * Completed: TBD
+
 ## Available `create-react-app` Scripts
 
 In the project directory, you can run:
