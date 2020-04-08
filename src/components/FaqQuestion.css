@@ -1,15 +1,26 @@
 .faq-question {
   overflow: hidden;
+  margin-bottom: 5px;
 }
 
 .faq-head {
-  border: 2px gray solid;
+  border: 2px #89afb2 solid;
   border-radius: 5px;
-  padding: 5px;
+  padding: 7px;
+  user-select: none;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.faq-head:hover {
+  border-color: #6090a0;
+}
+
+.faq-head:active {
+  border-color: #508090;
 }
 
 .faq-body {
-  margin: 2px;
-  height: 0;
-  transition: height 0.5s;
+  margin: 5px;
+  transition: height 0.35s ease-in-out;
 }
