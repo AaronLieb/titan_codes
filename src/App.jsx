@@ -65,6 +65,22 @@ function App() {
             question="Question 2?"
             answer="Answer to Question 2 that has enough text to expand to several lines instead of just one"
           />
+          <FaqQuestion
+            question="Question 3?"
+            answer="Answer to Question 3 that has enough text to expand to several lines instead of just one"
+          />
+          <FaqQuestion
+            question="Question 4?"
+            answer="Answer to Question 4 that has enough text to expand to several lines instead of just one"
+          />
+          <FaqQuestion
+            question="Question 5?"
+            answer="Answer to Question 5 that has enough text to expand to several lines instead of just one"
+          />
+          <FaqQuestion
+            question="Question 6?"
+            answer="Answer to Question 6 that has enough text to expand to several lines instead of just one"
+          />
         </div>
 
       </div>
