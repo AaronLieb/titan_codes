@@ -13,6 +13,10 @@ nav {
   border-bottom: 1px solid rgba(0, 0, 0, 0.12);
 }
 
+.navbar-logo {
+  margin-right: 10px;
+}
+
 .nav-link:hover {
   cursor: pointer;
 }
