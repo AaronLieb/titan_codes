@@ -14,7 +14,7 @@ function App() {
       <nav className="navbar navbar-expand-md navbar-light fixed-top">
         <div className="container-fluid">
           <div className="navbar-brand" href="#">
-            <img className="navbar-brand" src="logo192.png" width="40" />
+            <img className="navbar-brand" src="logo.png" width="40" />
             TitanCodes
           </div>
           <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">

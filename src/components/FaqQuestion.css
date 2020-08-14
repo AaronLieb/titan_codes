@@ -1,9 +1,9 @@
 .faq-question {
   overflow: hidden;
   margin-bottom: 5px;
-  display: inline-block;
-  width: 350px;
-  margin: 10px;
+  display: block;
+  width: 100%;
+  margin: 10px auto;
   vertical-align: top;
 }
 
@@ -30,7 +30,7 @@
 }
 
 @media (max-width: 770px) {
-  
+
   .faq-question {
     width: 60vw;
   }

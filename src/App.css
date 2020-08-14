@@ -14,7 +14,7 @@ nav {
 }
 
 .nav-link:hover {
-  cursor: pointer;   
+  cursor: pointer;
 }
 
 .nav-link:active {
@@ -49,6 +49,12 @@ div.section {
   font-size: 50px !important;
   max-width: 70vw;
   margin-bottom: 15px;
+}
+
+.covid {
+  background-color: #ffe6e6;
+  border-radius: 5px;
+  padding: 10px;
 }
 
 svg {
