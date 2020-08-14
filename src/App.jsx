@@ -45,9 +45,13 @@ function App() {
         <div className="content">
           <h1> About </h1>
           <p>
-            TitanCodes is a programming competition for California State University, Fullerton students being held on September 19th.
+            TitanCodes is a programming competition for California State University, Fullerton students.
             The event will have 20 teams of 4 competing for cash prizes.
             The event will consist of a competition phase including a lunch followed by a career fair with the sponsors and other companies.
+          </p>
+          <p className="covid">
+            Due to Covid there is currently no date for the competition.
+            We value the safety of the copmetitors and will resume development of the competition as soon as it is safe to do so.
           </p>
         </div>
 
