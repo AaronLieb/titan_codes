@@ -14,7 +14,9 @@ function App() {
       <nav className="navbar navbar-expand-md navbar-light fixed-top">
         <div className="container-fluid">
           <div className="navbar-brand" href="#">
+          <a href="https://acm.ecs.fullerton.edu">
             <img className="navbar-logo" src="acm.svg" width="50" />
+          </a>
             TitanCodes
           </div>
           <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">

@@ -17,6 +17,10 @@ nav {
   margin-right: 10px;
 }
 
+.navbar-logo:hover {
+  cursor: pointer;
+}
+
 .nav-link:hover {
   cursor: pointer;
 }
